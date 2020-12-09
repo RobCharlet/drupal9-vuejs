@@ -51,3 +51,4 @@ tignore template for Drupal 8 projects
 # ENV
 /.idea
 .DS_Store
+*.sql

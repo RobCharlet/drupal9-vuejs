@@ -2,3 +2,7 @@ name: drupal9-vuejs
 recipe: drupal9
 config:
   webroot: .
+services:
+  appserver:
+    build:
+      - composer install
