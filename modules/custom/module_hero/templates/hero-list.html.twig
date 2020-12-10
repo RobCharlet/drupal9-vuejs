@@ -1,7 +1,20 @@
-<h4>{{ title }}</h4>
+{{ attach_library('module_hero/hero-style') }}
+<h4 class="animate__animated animate__bounce">{{ title }}</h4>
 <ol>
   {% for item in items %}
-    <li>{{ item.name }}</li>
+    <li class="animate__animated
+      {{ random([
+      'animate__bounce',
+      'animate__backInUp',
+      'animate__fadeInDownBig',
+      'animate__fadeIn',
+      'animate__fadeInLeft',
+      'animate__fadeInUp',
+      'animate__flash'
+      ])
+      }}">
+      {{ item.name }}
+    </li>
   {% endfor %}
 </ol>
 <p><strong>This is coming from our template</strong></p>
