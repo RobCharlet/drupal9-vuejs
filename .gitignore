@@ -51,3 +51,7 @@
 # ENV
 /.idea
 .DS_Store
+
+# DB
+*.sql
+*.sql.gz
