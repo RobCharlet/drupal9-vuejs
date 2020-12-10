@@ -2,7 +2,9 @@
 
 namespace Drupal\module_hero\Controller;
 
-class HeroController
+use Drupal\Core\Controller\ControllerBase;
+
+class HeroController extends ControllerBase
 {
   public function heroList() {
     $heroes = [
@@ -19,11 +21,12 @@ class HeroController
     $heroesItem = '';
     foreach ($heroes as $hero) {
       $heroesItem.= '<li>'.$hero['name'].'</li>';
+      $this->
     }
 
     return [
       '#type' => 'markup',
-      '#markup' => '<ol>' .$heroesItem.'</ol>',
+      '#markup' => '<h4>'.$this->t('Our heroes list').'</h4><ol>' .$heroesItem.'</ol>',
     ];
   }
 }
