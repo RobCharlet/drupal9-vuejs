@@ -10,7 +10,7 @@ use Drupal\Core\Form\FormStateInterface;
 class ExampleForm extends FormBase
 {
   /**
-   * {@inheritdoc }
+   * {@inheritdoc}
    */
   public function getFormId()
   {
@@ -18,7 +18,7 @@ class ExampleForm extends FormBase
   }
 
   /**
-   * {@inheritdoc }
+   * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state)
   {
@@ -76,7 +76,7 @@ class ExampleForm extends FormBase
   }
 
   /**
-   * {@inheritdoc }
+   * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state)
   {

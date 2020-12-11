@@ -52,8 +52,8 @@ class HeroBlock extends BlockBase {
       ];
     }
 
-    $heroService=Drupal::service('module_hero.hero_articles');
-    kint($heroService->getHeroArticles());
+    /*$heroService=Drupal::service('module_hero.hero_articles');
+    kint($heroService->getHeroArticles());*/
 
     return $table;
   }
