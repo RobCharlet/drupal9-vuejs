@@ -53,7 +53,7 @@ class HeroBlock extends BlockBase {
     }
 
     $heroService=Drupal::service('module_hero.hero_articles');
-    kint($heroService);
+    kint($heroService->getHeroArticles());
 
     return $table;
   }
