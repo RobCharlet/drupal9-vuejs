@@ -2,6 +2,7 @@
 
 namespace Drupal\module_hero\Plugin\Block;
 
+use Drupal;
 use Drupal\Core\Block\BlockBase;
 
 /**
@@ -50,6 +51,9 @@ class HeroBlock extends BlockBase {
         ]
       ];
     }
+
+    $heroService=Drupal::service('module_hero.hero_articles');
+    kint($heroService);
 
     return $table;
   }
