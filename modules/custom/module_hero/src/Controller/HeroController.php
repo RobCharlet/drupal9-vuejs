@@ -2,6 +2,7 @@
 
 namespace Drupal\module_hero\Controller;
 
+use Drupal\Core\Config\ConfigFactory;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\module_hero\HeroArticleService;
 use Symfony\Component\DependencyInjection\ContainerInterface;
@@ -12,18 +13,23 @@ class HeroController extends ControllerBase
 
   public static function create(ContainerInterface $container) {
     return new static(
-      $container->get('module_hero.hero_articles')
+      $container->get('module_hero.hero_articles'),
+      $container->get('config.factory')
     );
   }
 
-  public function __construct(HeroArticleService $heroArticleService)
+  public function __construct(HeroArticleService $heroArticleService, ConfigFactory $configFactory)
   {
     $this->heroArticleService = $heroArticleService;
+    $this->configFactory = $configFactory;
   }
 
   public function heroList() {
 
 /*    kint($this->heroArticleService); die;*/
+
+/*    kint($this->configFactory->get('module_hero.settings')->get('hero_list_title')); die;*/
+
 
     $heroes = [
       ['name'=>'Superman'],
@@ -39,7 +45,7 @@ class HeroController extends ControllerBase
     return [
       '#theme' => 'hero_list',
       '#items' => $heroes,
-      '#title' => $this->t('Our wonderful heroes list')
+      '#title' => $this->configFactory->get('module_hero.settings')->get('hero_list_title')
     ];
   }
 }
