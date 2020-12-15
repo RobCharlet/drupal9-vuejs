@@ -1,7 +1,0 @@
-module_vuejs.example:
-  path: '/module-vuejs/example'
-  defaults:
-    _title: 'Example'
-    _controller: '\Drupal\module_vuejs\Controller\ModuleVuejsController::build'
-  requirements:
-    _permission: 'access content'

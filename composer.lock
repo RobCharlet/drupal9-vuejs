@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dd8710a6ab71957a4d7a506114e3f097",
+    "content-hash": "84db237a9b1f5ceb19822fcf0a9688ad",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2468,6 +2468,63 @@
             "homepage": "https://www.drupal.org/project/menu_normalizer",
             "support": {
                 "source": "https://git.drupalcode.org/project/menu_normalizer"
+            }
+        },
+        {
+            "name": "drupal/pdb",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/pdb.git",
+                "reference": "79384c496ec72739f14679373987c3d2597e8687"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha6+5-dev",
+                    "datestamp": "1603994651",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "codekarate",
+                    "homepage": "https://www.drupal.org/user/506260"
+                },
+                {
+                    "name": "emacoti",
+                    "homepage": "https://www.drupal.org/user/2930721"
+                },
+                {
+                    "name": "mrjmd",
+                    "homepage": "https://www.drupal.org/user/1800446"
+                },
+                {
+                    "name": "sdleslie",
+                    "homepage": "https://www.drupal.org/user/3608649"
+                },
+                {
+                    "name": "segovia94",
+                    "homepage": "https://www.drupal.org/user/780142"
+                }
+            ],
+            "description": "Progressively Decoupled Blocks (PDB). Build stuff with javascript frameworks as blocks.",
+            "homepage": "https://www.drupal.org/project/pdb",
+            "support": {
+                "source": "https://git.drupalcode.org/project/pdb"
             }
         },
         {
@@ -6890,7 +6947,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "drupal/devel": 20
+        "drupal/devel": 20,
+        "drupal/pdb": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -2,7 +2,6 @@
 
 namespace Drupal\module_hero\Plugin\Block;
 
-use Drupal;
 use Drupal\Core\Block\BlockBase;
 
 /**
