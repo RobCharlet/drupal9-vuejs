@@ -1,0 +1,6 @@
+services:
+  module_vuejs.event_subscriber:
+    class: Drupal\module_vuejs\EventSubscriber\ModuleVuejsSubscriber
+    arguments: ['@messenger']
+    tags:
+      - { name: event_subscriber }

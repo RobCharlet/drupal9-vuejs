@@ -21,6 +21,8 @@
         "drupal/core-recommended": "^9.1",
         "drupal/core-vendor-hardening": "^9.1",
         "drupal/devel": "4.x-dev@dev",
+        "drupal/rest_menu_tree": "^2.0",
+        "drupal/restui": "^1.19",
         "drush/drush": "^10.3",
         "kint-php/kint": "^3.3"
     },

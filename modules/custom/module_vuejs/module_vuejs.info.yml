@@ -1,0 +1,6 @@
+name: module_vuejs
+type: module
+description: Gentle Decoupling with VueJS
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

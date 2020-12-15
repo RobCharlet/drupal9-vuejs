@@ -1,0 +1,4 @@
+administer module_vuejs configuration:
+  title: 'Administer module_vuejs configuration'
+  description: 'Optional description.'
+  restrict access: true
