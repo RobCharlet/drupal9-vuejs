@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\vuejs\Plugin\Block;
+namespace Drupal\module_vuejs\Plugin\Block;
 
 use Drupal\Core\Block\Annotation\Block;
 use Drupal\Core\Block\BlockBase;
