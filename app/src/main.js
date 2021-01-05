@@ -3,6 +3,8 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 
+Vue.config.productionTip = false
+
 //tell vue to use the router and resource
 Vue.use(VueRouter)
 Vue.use(VueResource)
@@ -28,18 +30,7 @@ const router = new VueRouter({
   mode: 'history'
 })
 
-Vue.config.productionTip = false
-
-//instantiate the vue instance
 new Vue({
-  //define the selector for the root component
-  el:'#app',
-  //pass the template to the root component
-  template:'<App/>',
-  //declare components that the root component can access
-  components: {
-    App
-  },
-  //pass in the router to the view instance
+  render: h => h(App),
   router
 }).$mount('#app')
