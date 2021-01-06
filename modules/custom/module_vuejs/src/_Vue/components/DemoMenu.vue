@@ -14,20 +14,21 @@
 
 <script>
 import axios from 'axios';
-  export default {
-    name: 'DemoMenu',
-    data() {
-      return {
-        menuItems: null
-      }
-    },
-    mounted() {
-      const vm = this;
-      axios.get(`/entity/menu/scores/tree? format=json`).then(response=>{
-        vm.menuItems = _.map(response.data, 'link');
-      })
+
+export default {
+  name: 'DemoMenu',
+  data() {
+    return {
+      menuItems: null
     }
+  },
+  mounted() {
+    const vm = this;
+    axios.get(`/entity/menu/scores/tree? format=json`).then(response => {
+      vm.menuItems = _.map(response.data, 'link');
+    })
   }
+}
 </script>
 
 <style scoped></style>
