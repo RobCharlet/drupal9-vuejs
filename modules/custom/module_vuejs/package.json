@@ -1,34 +1,48 @@
 {
-    "browserslist": [
-        "defaults"
+  "name": "module_vuejs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve Vue/main.js",
+    "build": "vue-cli-service build Vue/main.js",
+    "lint": "vue-cli-service lint Vue/main.js"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-airbnb": "^5.0.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/airbnb"
     ],
-    "devDependencies": {
-        "@symfony/webpack-encore": "^0.30.0",
-        "axios": "^0.21.0",
-        "bootstrap": "^4.4.1",
-        "core-js": "^3.0.0",
-        "eslint": "^6.7.2",
-        "eslint-config-airbnb-base": "^14.0.0",
-        "eslint-plugin-import": "^2.19.1",
-        "eslint-plugin-vue": "^6.0.1",
-        "node-sass": "^4.13.0",
-        "regenerator-runtime": "^0.13.2",
-        "sass-loader": "^8.0.0",
-        "vue": "^2.5",
-        "vue-loader": "^15",
-        "vue-template-compiler": "^2.6.11",
-        "webpack-notifier": "^1.6.0"
+    "parserOptions": {
+      "parser": "babel-eslint"
     },
-    "license": "UNLICENSED",
-    "private": true,
-    "scripts": {
-        "dev-server": "encore dev-server",
-        "dev": "encore dev",
-        "watch": "encore dev --watch",
-        "build": "encore production --progress",
-        "lint": "node_modules/.bin/eslint assets/** --ignore-pattern *.scss --ignore-pattern *.gif --ignore-pattern *.png"
-    },
-    "dependencies": {
-        "eslint-config-airbnb": "^18.2.1"
-    }
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
