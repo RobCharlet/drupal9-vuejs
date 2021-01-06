@@ -1,7 +1,6 @@
 # Custom module library for general purposes.
 vue:
   js:
-    dist/js/test.js: {}
     dist/js/app.d9f8565a.js: {}
     dist/js/chunk-vendors.5a5a5781.js: {}
   css:
