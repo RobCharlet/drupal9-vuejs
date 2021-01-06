@@ -1,6 +1,5 @@
 <template>
-  <div id="albums">
-    <div class="row">
+  <div class="row" id="albums">
       <div class="col-md-3 col-sm-12" v-for="album in albums" :key="album.nid[0].value">
         <div class="card">
           <img
@@ -18,21 +17,20 @@
                 <strong>Producer :</strong>
                 <span>{{ album.field_producer[0].value }}</span>
               </p>
-<!--              <p>-->
-<!--                <strong>Genres :</strong>-->
-<!--                <span>-->
-<!--                  {{album.field_genres[0].value}}-->
-<!--                </span>-->
-<!--              </p>-->
-<!--              <p>-->
-<!--                <strong>Labels :</strong>-->
-<!--                <span>{{ album.field_label[0].value }}</span>-->
-<!--              </p>-->
+              <!--              <p>-->
+              <!--                <strong>Genres :</strong>-->
+              <!--                <span>-->
+              <!--                  {{album.field_genres[0].value}}-->
+              <!--                </span>-->
+              <!--              </p>-->
+              <!--              <p>-->
+              <!--                <strong>Labels :</strong>-->
+              <!--                <span>{{ album.field_label[0].value }}</span>-->
+              <!--              </p>-->
             </div>
           </div>
         </div>
       </div>
-    </div>
   </div>
 </template>
 

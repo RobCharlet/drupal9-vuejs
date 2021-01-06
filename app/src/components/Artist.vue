@@ -1,12 +1,11 @@
 <template>
-  <div id="artists">
-    <div class="row">
+  <div id="artists" class="row">
       <div class="col-md-3 col-sm-12" v-for="artist in artists" :key="artist.nid">
         <div class="card">
-          <img 
-            class="card-img-top artist_img" 
+          <img
+            class="card-img-top artist_img"
             :src="artist.field_artist_cover[0].url"
-            :alt="artist.field_artist_cover[0].alt" 
+            :alt="artist.field_artist_cover[0].alt"
             style="height: 200px;"
           >
           <div class="card-body">
@@ -36,7 +35,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
